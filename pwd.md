@@ -1,19 +1,24 @@
 # pwd
 
-Just for fun, let's open the default Terminal that was installed on your Mac.
+Just for fun, let's look at my default Terminal that was installed on my Mac
+when I got it new.
+
+    Last login: Mon Jun 15 08:59:20 on ttys000
+    katamari-macbook/lulu $
 
 ## The Prompt
 
-When you open your terminal you're confronted with a prompt. Type that prompt
+When I opened my terminal I was confronted with a prompt. Type that prompt
 here:
 
 <!-- Replace this comment with your answer -->
 
-What are the pieces of your prompt and what do they mean?
+What are the pieces of my prompt and what do they mean?
 
 <!-- Replace this comment with your anwer -->
 
-You can close Terminal and go back to iTerm2. Isn't OhMyZsh's minimal prompt
+The prompt is highly customizable, and that's exactly what OhMyZsh has done for
+us. Let's go back to iTerm2. Isn't OhMyZsh's minimal and color-coded prompt
 nice? ;)
 
 In these worksheets we will show the prompt as `$`. You may or may not have a

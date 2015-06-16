@@ -27,8 +27,8 @@ the Sublime Text 2 icon in your dock. Now you're ready to work!
 * Sublime Test 2 and Package Control
 * Markdown
 * `pwd`
-* <del>`hostname`</del>
-* <del>`mkdir`</del>
+* `hostname`
+* `mkdir`
 * <del>`cd`</del>
 * <del>`ls`</del>
 * <del>`rmdir`</del>
