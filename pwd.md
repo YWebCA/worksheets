@@ -11,7 +11,7 @@ here:
 
 What are the pieces of your prompt and what do they mean?
 
-<!-- Replace this ocmment with your anwer -->
+<!-- Replace this comment with your anwer -->
 
 You can close Terminal and go back to iTerm2. Isn't OhMyZsh's minimal prompt
 nice? ;)
@@ -36,3 +36,15 @@ the prompt itself.
 The prompt is prompting you to give it commands. So let's give it one.
 
     $ pwd
+
+The terminal should say something in response. Type that response here:
+
+<!-- Replace this comment with your answer -->
+
+What does this response mean?
+
+<!-- Replace this comment with your answer -->
+
+So what does `pwd` do? What does `pwd` stand for? (It's an acronym.)
+
+<!-- Replace this comment with your anwer -->
