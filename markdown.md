@@ -59,7 +59,7 @@ Search for a Markdown Previewer package and install it.
 
 ## Preview this worksheet in the browser
 
-How do you do it?
+Use Markdown Previewer to render this worksheet (the one you're looking at right now) in the browser. You're on your own for this one. How do you do it?
 
 <!--
       Replace this comment with your answer.
@@ -85,17 +85,23 @@ documentation.
 
 ### Figure out how to do all these block-level things in Markdown.
 
-1. A paragraph:  
+1.  A paragraph:
 
-2. A heading (both ways):  
+    <!-- Replace this comment with your answer. -->
 
-3. An unordered list:  
+2. A heading (both ways):
 
-4. An ordered list:  
+    <!-- Replace this comment with your answer. -->
+
+3. An unordered list:
+
+    <!-- Replace this comment with your answer. -->
+
+4. An ordered list:
 
 5. A multiple-line list item:  
 
-6. A code block showing off some HTML code:
+6. A code block showing off some code that you don't want to render in the page:
 
 7. A nested blockquote:  
 

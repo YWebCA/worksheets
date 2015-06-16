@@ -21,9 +21,9 @@ dollar sign in your prompt, but that doesn't matter--this is just a convention.
 When we show a prompt and some stuff to type afterward, you don't have to type
 the prompt itself.
 
-> **A note on conventions.** A lot of what we teach you in this class is not going
-> to be hard and fast facts such as `2 + 2 = 4`. A lot of it is going to be
-> opinion, such as, "Indent using spaces, not tabs." We choose our opinions,
+> **A note on conventions.** A lot of what we teach you in this class is not
+> going > to be hard and fast facts such as `2 + 2 = 4`. A lot of it is going to
+> be opinion, such as, "Indent using spaces, not tabs." We choose our opinions,
 > carefully, though, and we try to make a distinction between an opinion that is
 > a well-accepted convention in the industry and an opinion that is just a
 > personal preference. We're trying to prepare you for things you're likely to
