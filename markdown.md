@@ -35,6 +35,8 @@ So lets learn Markdown!
 
 ## Install a Markdown previewer package for Sublime
 
+Skip this section if you've already installed Markdown Preview.
+
 Before you begin, make sure you have the [Package Control package installed in Sublime](sublime-text-2-package-control).
 
 ### Open the Sublime Command Palette
