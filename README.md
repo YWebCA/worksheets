@@ -30,8 +30,8 @@ the Sublime Text 2 icon in your dock. Now you're ready to work!
 * `hostname`
 * `mkdir`
 * `cd`
-* <del>`ls`</del>
-* <del>`rmdir`</del>
+* `ls`
+* `rmdir`
 * `touch`
 * `cp`
 * `mv`
