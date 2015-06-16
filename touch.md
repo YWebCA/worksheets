@@ -1,14 +1,10 @@
 # Worksheet: `touch`
 
-[Right-click and "Save link as..." to download this worksheet.](worksheets/touch.md)
+**Before you begin**, make sure your `~/temp/` directory exists and is empty.
 
-More command line!
+Open iTerm and go home (if you're not there already).
 
-So we don't get super confused, let's delete the `temp` directory from our home folders. You can do this in the Finder.
-
-Open Bash and go home.
-
-## Do this in Bash:
+## Do this in zsh:
 
     $ mkdir -p temp/kiwis
     $ cd temp/kiwis
@@ -18,32 +14,40 @@ What did that last line do?
 
 > Hint: try `ls`.
 
+<!-- Replace this comment with your answer -->
+
 Try `touch`ing some more stuff. What is happening when you do that?
 
-*Additional notes:*  
+<!-- Replace this comment with your answer -->
 
 ## Open one of your `touch`ed files in Sublime
 
 What's in it?
 
-Can you `touch` files of different extensions? Try an HTML file. What happens when you open it? In Chrome? In Sublime?
+<!-- Replace this comment with your answer -->
 
-*Additional notes:*  
+Can you `touch` files of different extensions? Try an HTML file. What happens
+when you open it? What happens when you open it in Chrome? What happens when you
+oen it in Sublime?
+
+<!-- Replace this comment with your answer -->
 
 -----
 
 ## Timestamps
 
-Try `ls -l` and find the timestamps for each file. What is a timestamp?
+Try
+
+    $ ls -l
+
+and find the timestamps for each file. What is a timestamp?
+
+<!-- Replace this comment with your answer -->
 
 Use `touch` on your oldest file and then `ls -l` again. What's changed?
 
+<!-- Replace this comment with your answer -->
+
 **So what does `touch` *really* do?**
 
-*Additional notes:*  
-
------
-
-## Experiment time
-
-`cd` up one directory and try to `rmdir kiwis`. You *should* get an error. What is it and why do you get it?
+<!-- Replace this comment with your answer -->
