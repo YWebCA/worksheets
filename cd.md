@@ -24,7 +24,8 @@ Try it:
     $ cd things
     $ pwd
 
-Try:
+We can also optionally add a `/` to the end of the directory name. Other than being optional, `/` has a use we will go over in a bit.
+Try adding a slash:
     $ cd frank/
     $ pwd
 
@@ -36,6 +37,7 @@ Try:
     $ cd alex/
     $ pwd
 
+Try:
     $ cd john/
     $ pwd
 
