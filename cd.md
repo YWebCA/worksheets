@@ -1,3 +1,5 @@
+# cd
+
 `cd` stands for change directory, which is simple what it does. We use `cd` to move up and down the directory structure.
 Enter the following commands to see `cd` at work:
     $ cd temp
