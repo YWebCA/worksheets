@@ -97,6 +97,10 @@ Describe what the `-r` switch does:
 
 <!-- Replace this comment with your answer -->
 
+What does `-r` stand for? What does that mean?
+
+<!-- Replace this comment with your answer -->
+
 -----
 
 ## Let's Play
