@@ -1,47 +1,69 @@
 # Pipe and Redirect
 
-Pipe, `|`, is used to send the output of one command to another command. Let's try concatenating some files and outputting them with less:
-
-    $ cat ex12.txt ex13.txt | less
+Go to your home directory.
 
 Redirects `<`, `>`, and `>>` are used input files to a command or put a commands output to a file.
 
-`<` will send a files contents to a command. Try it out:
+## &gt;
 
-    $ cat < ex13.txt
+`>` will send output of a command to a file. It will create the file if it doesn't exist and overwrite it if it does. Try:
 
-Where do the output of the cat command come from?
+    $ echo "Roses are red" > one.txt
+    $ echo "Violets are blue" > one.txt
+    $ cat one.txt
+
+What's inside `one.txt`?
+
+<!-- Replace this comment with your answer -->
+
+    $ echo "Sugar is sweet\nAnd so are you" > two.txt
+
+> Note the `\n`. Remember how backslashes can escape special characters? In this
+> case, `\n` is a special code for a new-line character.
+
+## Pipe
+
+Pipe, `|`, is used to send the output of one command to another command. Let's
+try concatenating some files and outputting them with less:
+
+    $ cat one.txt two.txt | less
+
+## &lt;
+
+`<` will send a file's contents to a command. Try it out:
+
+    $ cat < two.txt
+
+Where does the output of the cat command come from?
 
 <!-- Replace this comment with your answer -->
 
 Try it with the less command:
 
-    $ less < ex12.txt
+    $ less < two.txt
 
 Try using pipe and redirect together:
 
-    $ less < ex12.txt | cat | less
+    $ less < two.txt | cat | less
 
-What order do you think the instances less and cat happened in?
-
-<!-- Replace this comment with your answer -->
-
-Try out the following command:
-
-    $ cat ex13.txt > ex15.txt
-    $ cat ex15.txt
-
-Where did the contents of `ext15.txt` come from?
+What order do you think all these commands happened in?
 
 <!-- Replace this comment with your answer -->
 
-`>>` is used to append the output of a command to a file. Let's try using it:
+## &gt;&gt;
 
-    $ cat ex13.txt >> ex15.txt
-    $ cat ex15.txt
-    $ cat ex13.txt >> ex15.txt
-    $ cat ex15.txt
+`>>` is used to *append* the output of a command to a file.
 
-What happenned each time we entered `cat ex13.txt >> ex15.txt`?
+Let's try using it:
+
+    $ echo "Roses are red" > three.txt
+    $ cat three.txt >> poem.txt
+    $ cat poem.txt
+    $ cat one.txt >> poem.txt
+    $ cat poem.txt
+    $ cat two.txt >> poem.txt
+    $ cat poem.txt
+
+What happenned each time we entered used `>>`? What does "append" mean?
 
 <!-- Replace this comment with your answer -->
