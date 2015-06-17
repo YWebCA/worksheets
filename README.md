@@ -16,7 +16,7 @@ If you get an error saying that the directory does not exist, do
 
 Then everybody do
 
-    $ git clone git@github.com:YWebCA/worksheets.git
+    $ git clone https://github.com/YWebCA/worksheets.git
     $ open .
 
 In the Finder window that pops up, click and drag the `worksheets` folder onto
