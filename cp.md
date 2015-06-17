@@ -63,8 +63,10 @@ What happened? Use Sublime to investigate.
 Now you're going to do some work on your own.
 
 1.  Make at least two directories.
-2.  Make two directories in each of the ones you just made.
-3.  Create some empty files in each of the child directories.
+2.  Make two directories in each of the ones you just made. Make sure all these
+    directories have names that are different from each other.
+3.  Create some empty files in each of the child directories. Make sure all
+    these files have different names from each other.
 
 Just as an example, this is what I have (but you can do whatever you like):
 
