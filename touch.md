@@ -22,6 +22,8 @@ Try `touch`ing some more stuff. What is happening when you do that?
 
 ## Open one of your `touch`ed files in Sublime
 
+Use the `subl` command and give it the name of your file as an argument.
+
 What's in it?
 
 <!-- Replace this comment with your answer -->
