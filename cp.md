@@ -1,26 +1,50 @@
 # Worksheet: `cp`
 
-[Right-click and "Save link as..." to download this worksheet.](worksheets/cp.md)
+`cp` is an abbreviation for "copy." It can copy both files and directories.
 
-Let's nuke `~/temp` again. Then open Bash, go home, and...
+## Refresh
 
-	$ mkdir -p temp/mangoes
-	$ cd temp/mangoes
-	$ touch one.txt
+Let's start with a fresh directory to play with. Open Finder and go to your home directory *or* type this in iTerm:
+
+		$ open ~
+
+Drag the `temp` folder to the **trash**.
+
+Now in iTerm:
+
+		$ cd ~
+		$ mkdir -p temp/mangoes
+		$ cd temp/mangoes
+		$ touch one.txt
 
 ## Let's learn `cp`
 
-	$ cp one.txt two.txt
+		$ cp one.txt two.txt
 
 What happened?
 
-Open `two.txt` in Sublime, type some stuff, save it, and close it. Now, in Bash...
+<!-- Replace this comment with your answer -->
 
-	$ cp two.txt three.txt
+Open `two.txt` in Sublime:
 
-Open `three.txt` in Sublime. What's going on? Type some more stuff, save, and close it. Now open `two.txt` in Sublime. What do you see? What's in `one.txt`?
+		$ subl two.txt
 
-*Additional notes:*  
+Type some stuff, save it, and close it. Now, in iTerm...
+
+		$ cp two.txt three.txt
+
+Open `three.txt` in Sublime. What's going on when you `cp`?
+
+<!-- Replace this comment with your answer -->
+
+Type some more stuff, save, and close `three.txt`. Now open `two.txt` in Sublime. What do
+you see?
+
+<!-- Replace this comment with your answer -->
+
+What's in `one.txt`?
+
+<!-- Replace this comment with your answer -->
 
 ### Be careful...
 
@@ -28,17 +52,21 @@ Try this...
 
 	$ cp three.txt one.txt
 
-What happened?
+What happened? Use Sublime to investigate.
 
-*Additional notes:*  
+<!-- Replace this comment with your answer -->
 
 -----
 
 ## The `-r` switch
 
-Make at least two directories. Put two directories in each of those. Now create some empty files in each of the "leaf" directories.
+Now you're going to do some work on your own.
 
-This is what I have (but you can do whatever you like):
+1.  Make at least two directories.
+2.  Make two directories in each of the ones you just made.
+3.  Create some empty files in each of the child directories.
+
+Just as an example, this is what I have (but you can do whatever you like):
 
 	katamari:temp LipGlossary$ ls -R
 	fruit	veg
@@ -50,7 +78,7 @@ This is what I have (but you can do whatever you like):
 	brown.txt	green.txt
 
 	./fruit/mangoes:
-	ripe.txt	young.txt
+	ripe.txt	sweet.txt
 
 	./veg:
 	carrots	peppers
@@ -61,47 +89,128 @@ This is what I have (but you can do whatever you like):
 	./veg/peppers:
 	bell.txt	red.txt
 
-Try moving around and using `cp -r` on different things, files *and* directories. It takes two arguments, a *source* and a *destination*.
+Try moving around and using `cp -r` on different things, files *and*
+directories. Remember that `cp` takes two arguments: a *source* and a
+*destination*.
 
 Describe what the `-r` switch does:
+
+<!-- Replace this comment with your answer -->
 
 -----
 
 ## Let's Play
 
-Set up each of these cases...
+Please ask the instructor how much of this section to complete. There are 56
+cases, and you probably don't want to do them all by yourself.
 
-1. `source` does not exist?
-2. `source` is a file and
-	1. `destination` is a file?
-	2. `destination` is a directory?
-	3. `destination` does not exist?
-3. `source` is a directory and
-	1. `destination` is a file?
-	2. `destination` is a directory?
-	3. `destination` does not exist?
+Try all of these things:
 
-And, for each of them, try all of these things:
+1.  `$ cp source destination`
+2.  `$ cp source/ destination`
+3.  `$ cp source destination/`
+4.  `$ cp source/ destination/`
+5.  `$ cp -r source destination`
+6.  `$ cp -r source/ destination`
+7.  `$ cp -r source destination/`
+8.  `$ cp -r source/ destination/`
 
-1. `$ cp source destination`
-2. `$ cp source/ destination`
-3. `$ cp source destination/`
-4. `$ cp source/ destination/`
-5. `$ cp -r source destination`
-6. `$ cp -r source/ destination`
-7. `$ cp -r source destination/`
-8. `$ cp -r source/ destination/`
+for each of these cases:
+
+1.  `source` does not exist
+2.  `source` is a file and
+		1.  `destination` is a file
+		2.  `destination` is a directory
+		3.  `destination` does not exist
+3.  `source` is a directory and
+		1.  `destination` is a file
+		2.  `destination` is a directory
+		3.  `destination` does not exist
 
 ### My Answers
+
+<!-- Replace this comment with your answers -->
+
+### Our Answers
+
+1.  `source` does not exist
+		1.  `$ cp source destination`
+		2.  `$ cp source/ destination`
+		3.  `$ cp source destination/`
+		4.  `$ cp source/ destination/`
+		5.  `$ cp -r source destination`
+		6.  `$ cp -r source/ destination`
+		7.  `$ cp -r source destination/`
+		8.  `$ cp -r source/ destination/`
+2.  `source` is a file and
+		1.  `destination` is a file
+					1.  `$ cp source destination`
+					2.  `$ cp source/ destination`
+					3.  `$ cp source destination/`
+					4.  `$ cp source/ destination/`
+					5.  `$ cp -r source destination`
+					6.  `$ cp -r source/ destination`
+					7.  `$ cp -r source destination/`
+					8.  `$ cp -r source/ destination/`
+		2.  `destination` is a directory
+				1.  `$ cp source destination`
+				2.  `$ cp source/ destination`
+				3.  `$ cp source destination/`
+				4.  `$ cp source/ destination/`
+				5.  `$ cp -r source destination`
+				6.  `$ cp -r source/ destination`
+				7.  `$ cp -r source destination/`
+				8.  `$ cp -r source/ destination/`
+		3.  `destination` does not exist
+				1.  `$ cp source destination`
+				2.  `$ cp source/ destination`
+				3.  `$ cp source destination/`
+				4.  `$ cp source/ destination/`
+				5.  `$ cp -r source destination`
+				6.  `$ cp -r source/ destination`
+				7.  `$ cp -r source destination/`
+				8.  `$ cp -r source/ destination/`
+3.  `source` is a directory and
+		1.  `destination` is a file
+				1.  `$ cp source destination`
+				2.  `$ cp source/ destination`
+				3.  `$ cp source destination/`
+				4.  `$ cp source/ destination/`
+				5.  `$ cp -r source destination`
+				6.  `$ cp -r source/ destination`
+				7.  `$ cp -r source destination/`
+				8.  `$ cp -r source/ destination/`
+		2.  `destination` is a directory
+				1.  `$ cp source destination`
+				2.  `$ cp source/ destination`
+				3.  `$ cp source destination/`
+				4.  `$ cp source/ destination/`
+				5.  `$ cp -r source destination`
+				6.  `$ cp -r source/ destination`
+				7.  `$ cp -r source destination/`
+				8.  `$ cp -r source/ destination/`
+		3.  `destination` does not exist
+				1.  `$ cp source destination`
+				2.  `$ cp source/ destination`
+				3.  `$ cp source destination/`
+				4.  `$ cp source/ destination/`
+				5.  `$ cp -r source destination`
+				6.  `$ cp -r source/ destination`
+				7.  `$ cp -r source destination/`
+				8.  `$ cp -r source/ destination/`
 
 -----
 
 ## The Big Takeaway
 
-So now you know how to copy things into other things. But there are some weird edge cases that you may have discovered above.
+So now you know how to copy things into other things. But there are some weird
+edge cases that you may have discovered above.
 
-1. What's the subtle difference between copying a file to the working directory with a new name versus copying it into a directory while keeping its name?
+1.  How can you make sure you're copying a file into a subdirectory and not just
+    copying into the working directory with a new name?
 
-2. Did you figure out how to merge directories?
+<!-- Replace this comment with your answer -->
 
-*Additional notes:*
+2.  Did you figure out how to merge directories?
+
+<!-- Replace this comment with your answer -->
