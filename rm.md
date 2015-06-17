@@ -1,7 +1,7 @@
 # rm
 Go to your temp directory:
     
-    $ cd temp
+    $ cd ~/temp
 
 And look at its contents:
     
