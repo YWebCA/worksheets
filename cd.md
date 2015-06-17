@@ -1,6 +1,6 @@
 # cd
 
-`cd` stands for change directory, which is simple what it does. We use `cd` to move up and down the directory structure.
+`cd` stands for change directory, which is simply what it does. We use `cd` to move up and down the directory structure.
 
 Enter the following commands to see `cd` at work:
 
@@ -77,7 +77,7 @@ Try it:
     $ cd ../../..
     $ pwd
 
-How many parent directories up did you go you?
+How many parent directories did you go up?
 
 <!-- Replace this comment with your answer -->
 
@@ -106,3 +106,34 @@ And one last time:
 What directory are we finishing in?
 
 <!-- Replace this comment with your answer -->
+
+## Go home
+
+By now you've seen this tild&egrav; `~` thing a few times. The tild&egrav; is
+shorthand for your home directory. Since eveyone's home directory has a
+different name, this is really useful, especially if you want to write code
+other people can use.
+
+When you open a terminal, you should automatically be at your home. You may have noticed, as you `cd` around, that your prompt changes to reflect your current
+working directory. When you're home, your prompt shows a tild&egrav;.
+Pretty cool.
+
+Because we have this shorthand, getting home from anywhere is really easy:
+
+    $ cd ~
+
+Actually, you can just type
+
+    $ cd
+
+to go home. Programmers are lazy.
+
+Since it's so useful to go home, we'll want to be able to easily find our home
+directory in Finder and save it in our favorites for later.
+
+    $ open ~/..
+
+This opens the parent of our home directory in Finder. You should see a house
+icon and the name of your home directory. If it's not already there, we're going
+to click and drag that little house into our "favorites" menu on the left. Make
+sure to drop it between items, not on or inside of anything.
