@@ -21,7 +21,7 @@ Try this...
 
 What happens?
 
-<!-- Replace this comment with your answer -->
+    Missing filename ("less --help" for help)
 
 Unlike other commands, `less` doesn't return us to the command prompt
 immediately. It keeps running and waits for us to give it instructions. Press
@@ -45,7 +45,8 @@ is `--without-npm`.
 Use `less --help` to find the short version of the `--help` flag and then test
 it out.
 
-<!-- Replace this comment with your notes -->
+> There is no short flag for help, but the `h` command while `less` is running
+> will show the help page.
 
 -----
 
@@ -58,7 +59,8 @@ Try `less` with *two* arguments.
 
 What happens? How do you change between files?
 
-<!-- Replace this comment with your notes -->
+> `less` displays all the files in the order you specify. `:n` jumps to the next
+> file and `:p` jumps to the previous.
 
 -----
 
@@ -70,7 +72,7 @@ read an entire file before giving you control (which could be problematic for
 very, very large files).
 
 However, at least in Bash, `more` is just an alias for `less`, because `less` is
-all  you need. Less is more. :) In Zsh, `more` works as expected.
+all you need. Less is more. :) In Zsh, `more` works as expected.
 
 <!-- Replace this comment with your notes -->
 
@@ -85,8 +87,9 @@ all  you need. Less is more. :) In Zsh, `more` works as expected.
 
 What does `cat` do?
 
-<!-- Replace this comment with your notes -->
+> It prints the contents of a file to the terminal. If you give it more than one
+> argument, it prints them all in one stream, in the order you specify.
 
 What does `cat` *mean*? Which is to say: what is `cat` short for?
 
-<!-- Replace this comment with your notes -->
+> Concatenate. It's from the Latin for "link together".

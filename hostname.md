@@ -6,20 +6,22 @@ Type this into your terminal:
 
 What response do you get?
 
-<!-- Replace this comment with your answer -->
+    katamari.local
 
 What response(s) did you other team members get?
 
-<!-- Replace this comment with your answer -->
+    mnilmints01792-2.local
+    stephanies-macbook-air.local
 
 What does that response mean?
 
-<!-- Replace this comment with your answer -->
+    My computer's network name.
 
 What does `hostname` do?
 
-<!-- Replace this comment with your answer -->
+    Prints my computer's network name.
 
 Why do you think you would need to know your hostname?
 
-<!-- Replace this comment with your answer -->
+    Virtual machine and remote connection spaghetti.
+    To set up a LAN for my friends. 

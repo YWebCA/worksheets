@@ -23,7 +23,7 @@ Now in iTerm:
 
 What happened?
 
-<!-- Replace this comment with your answer -->
+> We made a copy of `one.txt` named `two.txt`
 
 Open `two.txt` in Sublime:
 
@@ -35,16 +35,16 @@ Type some stuff, save it, and close it. Now, in iTerm...
 
 Open `three.txt` in Sublime. What's going on when you `cp`?
 
-<!-- Replace this comment with your answer -->
+> It makes a copy.
 
 Type some more stuff, save, and close `three.txt`. Now open `two.txt` in Sublime. What do
 you see?
 
-<!-- Replace this comment with your answer -->
+> I saw the original writing in `two.txt`. It was not changed.
 
 What's in `one.txt`?
 
-<!-- Replace this comment with your answer -->
+> It's still empty.
 
 ### Be careful...
 
@@ -54,7 +54,7 @@ Try this...
 
 What happened? Use Sublime to investigate.
 
-<!-- Replace this comment with your answer -->
+> `one.txt` was overwritten with the source file (`three.txt`).
 
 -----
 
@@ -63,10 +63,8 @@ What happened? Use Sublime to investigate.
 Now you're going to do some work on your own.
 
 1.  Make at least two directories.
-2.  Make two directories in each of the ones you just made. Make sure all these
-    directories have names that are different from each other.
-3.  Create some empty files in each of the child directories. Make sure all
-    these files have different names from each other.
+2.  Make two directories in each of the ones you just made.
+3.  Create some empty files in each of the child directories.
 
 Just as an example, this is what I have (but you can do whatever you like):
 
@@ -97,11 +95,11 @@ directories. Remember that `cp` takes two arguments: a *source* and a
 
 Describe what the `-r` switch does:
 
-<!-- Replace this comment with your answer -->
+> It copies the entire subtree.
 
 What does `-r` stand for? What does that mean?
 
-<!-- Replace this comment with your answer -->
+> It stands for "recursive". Recursion means to apply the same operations to all of the children, and their children, and their children, all the way down.
 
 -----
 
@@ -135,7 +133,19 @@ for each of these cases:
 
 ### My Answers
 
-<!-- Replace this comment with your answers -->
+1.  `source` does not exist
+		Error: cp: source: No such file or directory
+2.  `source` is a file
+		1.  `destination` is a file
+				1. source is copied to destination
+				2. Error: cp: source/: Not a directory
+				3. Error: cp: destination is not a directory
+				4. Error: cp: destination is not a directory
+				5. source is copied to destination
+				6. Error: cp: source/: Not a directory
+				7. Error: cp: destination is not a directory
+				8. Error: cp: destination is not a directory
+		2.
 
 ### Our Answers
 
@@ -215,8 +225,24 @@ edge cases that you may have discovered above.
 1.  How can you make sure you're copying a file into a subdirectory and not just
     copying into the working directory with a new name?
 
-<!-- Replace this comment with your answer -->
+> We have an intution that you should be able to do
+
+		$ cp source newname
+
+		> when there already is a directory called `newname`. But instead the `source` is copied into the directory `newname`.
+
+		> But you can copy a file into a subdirectory with a new name by specifying the whole path.
+
+		$ cp source dir/destination
 
 2.  Did you figure out how to merge directories?
 
-<!-- Replace this comment with your answer -->
+		$ cp -r source/ destination
+		$ cp -r source/ destination/
+
+		> Where `destination` already exists as a directory.
+
+		> To just copy a directory into another one (as a subdirectory), do
+
+		$ cp -r source destination
+		$ cp -r source destination/

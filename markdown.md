@@ -61,10 +61,7 @@ Search for a Markdown Previewer package and install it.
 
 Use Markdown Previewer to render this worksheet (the one you're looking at right now) in the browser. You're on your own for this one. How do you do it?
 
-<!--
-      Replace this comment with your answer.
-      Hint: Use the Command Palette.
--->
+> Opened the command palette (Command+Shift+P) and searched for "Markdown" and selected "Preview".
 
 Once you figure this out, it will be very easy to test your answers on the rest
 of the worksheet.
@@ -87,83 +84,232 @@ documentation.
 
 1.  A paragraph:
 
-    <!-- Replace this comment with your answer. -->
+    > Just type! It's that easy. Have blank lines around the paragraph. Example:
+
+    This is an example paragraph. Check it out!
+    This line is not blank!
 
 2. A heading (both ways):
 
-    <!-- Replace this comment with your answer. -->
+    > Method 1: Underline the heading with equals (====) signs or dashes (-----)
 
-3. An unordered list:
+        My Heading
+        ==========
 
-    <!-- Replace this comment with your answer. -->
+        My Subheading
+        -------------
+
+    > Method 2: Use a hash (#) at the beginning of the line.
+
+        # My H1
+        ## My H2
+        ## My H3
+        etc.
+
+3.  An unordered list:
+
+    > Begin the lines with plus signs `+`, asterisks `*`, or dashes `-`. You **may** be able to mix and match them. But you can definitely use them all separately.
+
+        * Item 1
+        * Item 2
+        * Item 3
+
+        + Thing 1
+        + Thing 2
+        + Thing 3
+
+        - Stuff 1
+        - Stuff 2
+        - Stuff 3
+
+        * This
+        - That
+        + The other
 
 4. An ordered list:
 
-5. A multiple-line list item:  
+    > Write a numbered list. The numbers don't have to be in order.
 
-6. A code block showing off some code that you don't want to render in the page:
+    2.  Hey
+    1.  This
+    1.  Is still valid
 
-7. A nested blockquote:  
+5.  A multiple-line list item:
 
-8. A horizontal rule:  
+    > Keep the following blocks also indented at the same level. An example:
+
+    This is an example of a multi-line list item.
+
+6.  A code block showing off some code that you don't want to render in the page:
+
+    > Indent the code block one level deeper than your working indentation level.
+
+        This is a code block!
+
+7. A nested blockquote:
+
+    > If a block quote uses one greater-than sign or closing angle bracket, then a nested block quote uses two.
+    > > This is an example.
+        
+        > One block quote
+        > > Nested block quote
+
+8.  A horizontal rule:
+
+    > A line consisting of three to five dashes or asterisks.
+    >
+    > > Three dashes gives a short anchor.
+    > > `---`
+    >
+    > > Five dashes gives a thin line.
+    > > `-----`
+    >
+    > > Asterisks give a thick line.
+    > > `***`
+    > > `*****`
 
 What does "block-level" mean?
 
-<!-- Replace this comment with your answer. -->
+> In terms of a webpage, a block is an element that takes up the full width of its parent. It can contain other blocks. It can have sibling blocks.
 
 
 ### Figure out how to do all these inline things in Markdown.
 
-1. A link...  
+1.  A link...  
 
-    1. "Automatically," such as an e-mail address:  
+    1.  "Automatically," such as an e-mail address:
 
-    2. With link text:  
+        > Just type the email address. Example:
 
-    3. A reference-style link in a paragraph:
+        annalise@adorable.io
+
+        http://www.google.com
+
+        www.google.com
+
+        http://google.com
+
+        > These don't work:
+
+        google.com
+
+        mail.google.com
+
+        google.com/mail
+
+    2.  With link text:
+
+        Example: [Link text here](http://www.example.com)
+
+            [Link text here](http://www.example.com)
+
+    3.  A reference-style link in a paragraph:
+
+            [Link text][id]
+
+        > Then, later on in the document, you have to define the identifier.
+
+            [id]: http://example.com/  "Optional Title Here"
+
+        [Link text][id]
+
+        Note: the definition cannot be indented at all.
 
         Why are reference-style links awesome?
 
-2. Emphasis (two ways):  
+        1.  You can put the definition anywhere in the document.
+        2.  You can use the definitions more than once.
+        3.  Your inline links are short and sweet.
 
-3. Strong emphasis (two ways):  
+2. Emphasis (two ways):
 
-3. A literal asterisk or underscore:  
+    > Emphasis is usually rendered italic. Surround some text with asterisks `*` or underscores `_`.
 
-4. Inline code:  
+        _This is italic!_
+        *So is this!*
+
+    _This is italic!_
+
+    *So is this!*
+
+3. Strong emphasis (two ways):
+
+    > Strong emphasis usually renders as bold. Surround some text with two asterisks or underscores.
+
+        __This is bold!__
+        **So is this!**
+
+    __This is bold!__
+
+    **So is this!**
+
+3.  A literal asterisk or underscore:
+
+    > Give your asterisks or underscores some breathing room with spaces. If they have to be next to other characters, escape them with a backslash `\`. Some examples:
+
+        I'm typing along and I want to talk about
+        \*\* asterisks! In multiple places! \*\*
+        \_cool_username_dude_thing\_
+        I have one \*asterisk here\* and there * .
+
+4.  Inline code:
+
+    `This` is an `example` of using `inline code segments`! 'Apostrophes' do not work.
+
+        `This` is an `example` of using `inline code segments`! 'Apostrophes' do not work.
+
+    Literal \` backtick \` or grave \`.
+
+        Literal \` backtick \` or grave \`.
 
 5. An image...
 
     1. Inline...  
 
-        1. Without alt text.  
+        1.  Without alt text.
 
-        2. With alt text.  
+            ![](http://vignette2.wikia.nocookie.net/steven-universe/images/7/7b/TFW.png/revision/latest?cb=20140629185937)
+
+        2.  With alt text.
+
+            ![Tiny floating whaaaaaale!](http://vignette2.wikia.nocookie.net/steven-universe/images/7/7b/TFW.png/revision/latest?cb=20140629185937)
 
     2. Reference-style...  
 
-        1. Without alt text.  
+        1.  Without alt text.
 
-        2. With alt text.
+            ![][whale]  
+
+        2.  With alt text.
+
+            ![Tiny floating whaaaaale!][whale]
 
 What does "inline" mean?
 
-<!-- Replace this comment with your answer. -->
+> Inline elements do not need their own blocks. They can flow in the same line as text. They are also called "span elements".
 
 ### Comments
 
 You may have noticed "comments" scattered throughout this document. What is a
 comment?
 
-<!-- Replace this comment with your answer. -->
+> A comment is not rendered in the final product.
+
+    A comment starts with this: <!--
+
+    A comment ends with this: -->
 
 Why are they useful?
 
-<!-- Replace this comment with your answer. -->
+1.  I can write whatever I want, it doesn't have to be syntactically correct.
+2.  I can use comments to remove parts of my code that are currently broken without deleting it.
+3.  I can leave notes to myself.
+4.  I can leave notes to my teammates.
+5.  I can document code that's confusing.
 
 What are some circumstances where you'd use comments?
 
-<!-- Replace this comment with your answer. -->
+> They're useful! See above.
 
 ### Can you mix and match Markdown markup and HTML markup?
 
@@ -171,3 +317,6 @@ If so, give an example. If not, why not? (If you don't know anything about HTML,
 that's okay. Just do your best to answer.)
 
 <!-- Replace this comment with your answer. -->
+
+[id]: http://example.com/  "Optional Title Here"
+[whale]: http://vignette2.wikia.nocookie.net/steven-universe/images/7/7b/TFW.png/revision/latest?cb=20140629185937 "Best cartoon ever!"

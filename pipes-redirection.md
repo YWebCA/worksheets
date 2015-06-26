@@ -14,7 +14,7 @@ Redirects `<`, `>`, and `>>` are used input files to a command or put a commands
 
 What's inside `ex12.txt`?
 
-<!-- Replace this comment with your answer -->
+    Violets are blue
 
     $ echo "Sugar is sweet\nAnd so are you" > ex13.txt
 
@@ -36,7 +36,7 @@ try concatenating some files and outputting them with less:
 
 Where does the output of the cat command come from?
 
-<!-- Replace this comment with your answer -->
+> From `ex13.txt`.
 
 Try it with the less command:
 
@@ -48,7 +48,7 @@ Try using pipe and redirect together:
 
 What order do you think all these commands happened in?
 
-<!-- Replace this comment with your answer -->
+> `ex13.txt` is sent to `less`, and the output is sent to `cat` which is sent back to `less`.
 
 ## &gt;&gt;
 
@@ -66,4 +66,4 @@ Let's try using it:
 
 What happenned each time we entered used `>>`? What does "append" mean?
 
-<!-- Replace this comment with your answer -->
+> Append means add to the end.

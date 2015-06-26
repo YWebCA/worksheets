@@ -9,7 +9,7 @@ Enter the following commands to see `cd` at work:
 
 What did `pwd` return?
 
-<!-- Replace this comment with your answer -->
+    /Users/LipGlossary/temp
 
 Enter the following:
 
@@ -18,18 +18,21 @@ Enter the following:
 
 What did `pwd` return?
 
-<!-- Replace this comment with your answer -->
+    /Users/LipGlossary/temp/stuff
 
 What would happen if you entered `cd things`?
 
-<!-- Replace this comment with your answer -->
+> It would move me to `things`.
+
+    /Users/LipGlossary/temp/stuff/things
 
 Try it:
 
     $ cd things
     $ pwd
 
-We can also optionally add a `/` to the end of the directory name. Other than being optional, `/` has a use we will go over in a bit.
+We can also optionally add a `/` to the end of the directory name. Other than
+being optional, `/` has a use we will go over in a bit.
 
 Try adding a slash:
 
@@ -51,7 +54,7 @@ Try:
     $ cd john/
     $ pwd
 
-You should now be at `/user/[your directroy]/temp/stuff/things/frank/joe/alex/john`. So how do we go back our previous directories. To go to a parent directory `cd` accepts `..` as a directory name. Any time you enter `cd ..` you will go to the parent directory of the one you are in. Try it out:
+You should now be at `/Users/[your directroy]/temp/stuff/things/frank/joe/alex/john`. So how do we go back our previous directories. To go to a parent directory `cd` accepts `..` as a directory name. Any time you enter `cd ..` you will go to the parent directory of the one you are in. Try it out:
 
     $ cd ..
     $ cd ..
@@ -59,11 +62,11 @@ You should now be at `/user/[your directroy]/temp/stuff/things/frank/joe/alex/jo
 
 What directory are in now?
 
-<!-- Replace this comment with your answer -->
+    /Users/LipGlossary/temp/stuff/things/frank/joe
 
 What directory would you be in if you did `cd ..` twice again?
 
-<!-- Replace this comment with your answer -->
+    /Users/LipGlossary/temp/stuff/things
 
 Try it again:
 
@@ -79,11 +82,11 @@ Try it:
 
 How many parent directories did you go up?
 
-<!-- Replace this comment with your answer -->
+> Three.
 
 What directory are you in?
 
-<!-- Replace this comment with your answer -->
+> My home directory.
 
 Try chaining together directories:
 
@@ -92,11 +95,11 @@ Try chaining together directories:
 
 What directory are you in?
 
-<!-- Replace this comment with your answer -->
+    /Users/LipGlossary/temp/stuff/things/frank/joe/alex/john
 
 How many child directories down did you go?
 
-<!-- Replace this comment with your answer -->
+> Seven
 
 And one last time:
 
@@ -105,7 +108,7 @@ And one last time:
 
 What directory are we finishing in?
 
-<!-- Replace this comment with your answer -->
+> My home directory.
 
 ## Go home
 

@@ -11,11 +11,21 @@ when I got it new.
 When I opened my terminal I was confronted with a prompt. Type that prompt
 here:
 
-<!-- Replace this comment with your answer -->
+> katamari-macbook/lulu $
 
 What are the pieces of my prompt and what do they mean?
 
-<!-- Replace this comment with your anwer -->
+    katamari-macbook
+> My computer's netowork name.
+
+    /
+> A divider.
+
+    lulu
+> My user name
+
+    $
+> The actual prompt.
 
 The prompt is highly customizable, and that's exactly what OhMyZsh has done for
 us. Let's go back to iTerm2. Isn't OhMyZsh's minimal and color-coded prompt
@@ -27,7 +37,7 @@ When we show a prompt and some stuff to type afterward, you don't have to type
 the prompt itself.
 
 > **A note on conventions.** A lot of what we teach you in this class is not
-> going > to be hard and fast facts such as `2 + 2 = 4`. A lot of it is going to
+> going to be hard and fast facts such as `2 + 2 = 4`. A lot of it is going to
 > be opinion, such as, "Indent using spaces, not tabs." We choose our opinions,
 > carefully, though, and we try to make a distinction between an opinion that is
 > a well-accepted convention in the industry and an opinion that is just a
@@ -44,12 +54,13 @@ The prompt is prompting you to give it commands. So let's give it one.
 
 The terminal should say something in response. Type that response here:
 
-<!-- Replace this comment with your answer -->
+    /Users/LipGlossary
 
 What does this response mean?
 
-<!-- Replace this comment with your answer -->
+> It is my current working directory. It is "where I am" right now in this
+> instance of the Terminal.
 
 So what does `pwd` do? What does `pwd` stand for? (It's an acronym.)
 
-<!-- Replace this comment with your anwer -->
+> Print Working Directory. It prints the working directory.

@@ -6,7 +6,7 @@
 
 If `mkdir` is "make directory," take a guess: what does `rmdir` do?
 
-<!-- Replace this comment with your answer -->
+> Remove a directory.
 
 First, go to your home directory. Then change your working directory to `temp`
 and list the contents:
@@ -36,7 +36,7 @@ Now try:
 
 What happened? (Hint: `ls` again to see the side effects.)
 
-<!-- Replace this comment with your answer -->
+> The directory `john` was removed. **FOREVEEEEERRRRRR.**
 
 Let's keep going:
 
@@ -59,14 +59,16 @@ Let's keep going:
 
 What did you just do?
 
-<!-- Replace this comment with your answer -->
+> I backtracked up the directory tree, removing all the directories on the way.
 
 ## Try this on your own...
 
 What happens if you try to remove a directory and it's not empty? Inside `temp`,
 create the directories `a/` and `a/b/`. Try to remove `a/`. What happens?
 
-<!-- Replace this comment with your answer -->
+> I get an error
+
+    rmdir: a: Directory not empty
 
 Let's clean up after ourselves:
 
@@ -74,3 +76,8 @@ Let's clean up after ourselves:
     $ rmdir b
     $ cd ..
     $ rmdir a
+
+## Notes on Flags
+
+I can ue the `-p` option to remove all the empty directories in a path, starting
+with the childmost child. `-p` stands for "path".

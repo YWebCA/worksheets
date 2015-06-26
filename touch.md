@@ -14,11 +14,11 @@ What did that last line do?
 
 > Hint: try `ls`.
 
-<!-- Replace this comment with your answer -->
+> It created a new file called `newfile.txt`.
 
 Try `touch`ing some more stuff. What is happening when you do that?
 
-<!-- Replace this comment with your answer -->
+> It creates new files of whatever name (and type!) we tell it.
 
 ## Open one of your `touch`ed files in Sublime
 
@@ -26,13 +26,15 @@ Use the `subl` command and give it the name of your file as an argument.
 
 What's in it?
 
-<!-- Replace this comment with your answer -->
+> Nothing!
 
 Can you `touch` files of different extensions? Try an HTML file. What happens
 when you open it? What happens when you open it in Chrome? What happens when you
 oen it in Sublime?
 
-<!-- Replace this comment with your answer -->
+> Yes, we can touch files of any extension, even files with no extension. When
+> you open one of these files, it's totally empty. HTML files opened in Chrome
+> are blank. Files opened in Sublime are blank. `touch`ed images are empty, too.
 
 -----
 
@@ -44,12 +46,13 @@ Try
 
 and find the timestamps for each file. What is a timestamp?
 
-<!-- Replace this comment with your answer -->
+> The time we created the file.
 
 Use `touch` on your oldest file and then `ls -l` again. What's changed?
 
-<!-- Replace this comment with your answer -->
+> The timestamp updated to the current time.
 
 **So what does `touch` *really* do?**
 
-<!-- Replace this comment with your answer -->
+> Without changing a file, it updates the timestamp. If the file does not exist,
+> it creates it.
