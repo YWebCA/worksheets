@@ -35,7 +35,7 @@ Try the following commands:
 
 What changed?
 
-<!-- Replace this comment with your answer -->
+> We removed `uncool.txt`. When we tried to remove it again, we got an error, because it was already gone.
 
 `rm` will also take multiple arguments. Try the following command:
     
@@ -44,7 +44,7 @@ What changed?
 
 What's left?
 
-<!-- Replace this comment with your answer -->
+> Only the `something` directory is left.
 
 Copy your `something` directory to a `newplace` directroy:
 
@@ -68,17 +68,17 @@ flag:
 We've seen the `-r` flag before. What other command takes `-r`? Does it mean the
 same thing for both commands?
 
-<!-- Replace this comment with your answer -->
+> `mv` and `cp` take the `-r` flag. It does mean the same thing: recursive (i.e. all the way down).
 
 What does the `-f` flag mean?
 
-<!-- Replace this comment with your answer -->
+> `-f` probably stands for "force". It suppresses errors and doesn't prompt for confirmation.
 
 `rm -rf` seems like a quick and powerful command. Can you think of any reasons
 why you might avoid using it?
 
-<!-- Replace this comment with your answer -->
+> You could end up deleting a whole bunch of things you didn't mean to, especially when you forget what your working directory is.
 
 If `-f` is quick and risky, find a flag that helps us to be more careful.
 
-<!-- Replace this comment with your answer -->
+> The `-i` flag prompts you for everything you remove (unless overridden by `-f`).
