@@ -4,7 +4,7 @@
 
     $ cd ~/temp
     $ touch ex12.txt ex13.txt ex14.txt ex21.txt
-    $ touch ex12.html poet.html
+    $ touch ex12.html poem.html
     $ mkdir heart
     $ mkdir egret
 
@@ -25,25 +25,25 @@ It's hard to explain, so let's try it:
 
 What does `ls` output?
 
-<!-- Replace this comment with your notes -->
+> It shows only all the files with the `.txt` extension.
 
     $ ls ex*.*
 
 What does `ls` output?
 
-<!-- Replace this comment with your notes -->
+> All the files that start with `ex` and have a dot in the end.
 
     $ ls ex*
 
 What does `ls` output?
 
-<!-- Replace this comment with your notes -->
+> All the files that start with `ex`.
 
     $ ls *t
 
 What does `ls` output?
 
-<!-- Replace this comment with your notes -->
+> All the files that end with `t`. This includes directories. And because when you `ls` a directory, it shows its contents, we also get the contents of the directories that end in `t`.
 
 As you can see, `ls` takes an argument. We can tell it what (inside the current
 working directory) to list. And by using wildcards, we can give it a formula for what to list.
@@ -52,15 +52,15 @@ working directory) to list. And by using wildcards, we can give it a formula for
 
 Other commands will take wildcards in their arguments. Try:
 
-    $ cat *.txt > bigfile.txt
+    $ cat *.txt > poem.txt
 
-What is inside `bigfile.txt`?
+What is inside `poem.txt`?
 
-<!-- Replace this comment with your answer -->
+> The contents of all the files that match `*.txt` catted into `poem.txt`.
 
-Remember back to pipes and redirects. Remember that `>` will overwrite any file you send output to. Why does `bigfile.txt` have all of the files in it and not just the last one?
+Remember back to pipes and redirects. Remember that `>` will overwrite any file you send output to. Why does `poem.txt` have all of the files in it and not just the last one?
 
-<!-- Replace this comment with your answer -->
+> The `cat` command finishes and sends all of its output into `poem.txt` all at once.
 
 `rm` can take wildcards, too!
 
@@ -69,4 +69,4 @@ Remember back to pipes and redirects. Remember that `>` will overwrite any file 
 
 What happened?
 
-<!-- Replace this comment with your answer -->
+> All of the text files were removed! It didn't even bother to ask.
